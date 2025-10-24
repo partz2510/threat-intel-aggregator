@@ -32,10 +32,12 @@ Designed for security analysts, SOC teams, and anyone interested in automating t
 
 ## ⚙️ Setup & Usage
 
-### 1️⃣ Clone the Repository
+
 ```bash
+1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/threat-intel-aggregator.git
 cd threat-intel-aggregator
+
 2️⃣ Create a Virtual Environment
 bash
 Copy code
@@ -43,17 +45,21 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1   # Windows
 # or
 source .venv/bin/activate      # macOS/Linux
+
 3️⃣ Install Requirements
 bash
 Copy code
 pip install -r requirements.txt
+
 4️⃣ Create a .env File in the Project Root
 bash
 Copy code
 VT_API_KEY=your_virustotal_api_key
 ABUSEIPDB_KEY=your_abuseipdb_api_key
 OTX_API_KEY=your_otx_api_key
+
 🔐 Never commit your .env file to GitHub — it’s already ignored in .gitignore.
+
 
 🧠 Example Usage
 Basic Query
@@ -63,21 +69,10 @@ python src/main.py 8.8.8.8 --save
 🧾 Example Output
 When run successfully, the tool aggregates live intelligence from all three APIs and displays a colorized summary in your terminal:
 
+![report output](https://github.com/partz2510/threat-intel-aggregator/blob/main/Screenshot/report%20status.png?raw=true)
 nginx
 Copy code
-               Threat Intel | 8.8.8.8
-┏━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Source     ┃ Status ┃ Summary                ┃
-┡━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ VirusTotal │ OK     │ reputation=526         │
-│ AbuseIPDB  │ OK     │ abuseConfidenceScore=0 │
-│ OTX        │ OK     │ pulses=0               │
-└────────────┴────────┴────────────────────────┘
-Saved report: reports\report-8.8.8.8.json
-And here’s a screenshot of the actual output captured from the live run:
-
-
-(Replace the placeholder above with your own screenshot — taken directly from your terminal window.)
+     
 
 📁 Folder Structure
 css
