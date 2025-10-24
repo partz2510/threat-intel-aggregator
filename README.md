@@ -71,23 +71,6 @@ When run successfully, the tool aggregates live intelligence from all three APIs
 ```
 ![report output](https://github.com/partz2510/threat-intel-aggregator/blob/main/Screenshot/report%20status.png?raw=true)
 
-## 📁 Folder Structure
-css
-Copy code
-threat-intel-aggregator/
-├── src/
-│   ├── main.py
-│   ├── services.py
-├── reports/
-│   ├── report-8.8.8.8.json
-├── .env
-├── .gitignore
-├── requirements.txt
-├── README.md
-└── Screenshot/
-    ├── report status.png (CLI output screenshot)
-
-    
 ## 🧩 Future Improvements
 1. Add domain & file hash reputation support.
 
