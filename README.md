@@ -68,13 +68,10 @@ Copy code
 python src/main.py 8.8.8.8 --save
 🧾 Example Output
 When run successfully, the tool aggregates live intelligence from all three APIs and displays a colorized summary in your terminal:
-
+```
 ![report output](https://github.com/partz2510/threat-intel-aggregator/blob/main/Screenshot/report%20status.png?raw=true)
-nginx
-Copy code
-     
 
-📁 Folder Structure
+## 📁 Folder Structure
 css
 Copy code
 threat-intel-aggregator/
@@ -89,19 +86,22 @@ threat-intel-aggregator/
 ├── README.md
 └── Screenshot/
     ├── report status.png (CLI output screenshot)
-🧩 Future Improvements
-Add domain & file hash reputation support.
 
-Integrate additional feeds (Shodan, GreyNoise, Hybrid Analysis).
+    
+## 🧩 Future Improvements
+1. Add domain & file hash reputation support.
 
-Export reports directly to Splunk or Elasticsearch.
+2. Integrate additional feeds (Shodan, GreyNoise, Hybrid Analysis).
 
-Add auto-update scheduling.
+3. Export reports directly to Splunk or Elasticsearch.
 
-✨ Author
+4. Add auto-update scheduling.
+
+## ✨ Author
 Parthiban Ganesan
 📍 Singapore | 💼 Cybersecurity & Cloud Enthusiast
-🔗 LinkedIn | GitHub
+🔗[GitHub https://github.com/partz2510](https://github.com/partz2510)
 
-📜 License
+
+## 📜 License
 MIT License — free for educational and professional use.
